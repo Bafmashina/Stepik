@@ -1,0 +1,9 @@
+h1, h2, h3 {
+    color: rgb(138, 67, 21);
+}
+#log , #btn1, #table1 {
+    color: blue;
+}
+div[title] {
+    color: blueviolet;
+}
