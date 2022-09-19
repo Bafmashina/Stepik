@@ -15,6 +15,24 @@ h1 {
     color: hotpink;
 }
 /* Обращение через тэг-div к атрибуту-title */
-div[title] {
+div[title="text"] {
     color: aqua;
+}
+p {
+color: teal;
+/* Рамка для элкемента */
+border: 10px green solid;
+border-radius: 10px 20px;
+border-top-color: aquamarine;
+/* фон элемента */
+background-color: yellow;
+}
+/* фоновое изобрржение */
+.logo {
+    width: 400px;
+    height: 150px;
+    background-size: contain;
+    /* background-repeat: no-repeat= убирает повторение картинки */
+    background-repeat: no-repeat;
+    background-image: url("../img/main/logo.jpd.png");
 }

@@ -1,0 +1,57 @@
+div {
+    color: red;
+}
+div [title="tetx"] {
+    color: blue;
+}
+p {
+    color: teal;
+    border: 5px green outset;
+    border-radius: 10px;
+}
+.logo {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-top-width: 5px;
+    border-right-width: 2px;
+    background-image: url(/img/main/Fon1.jpg);
+    background-repeat: no-repeat;
+}
+/* пример плохого кода для свеетофора */
+.circle {
+    background-color: red;
+    border: 40px solid 1px;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px; 
+}
+.circle1 {
+    background-color: yellow;
+    border: 10px solid 1px;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+.circle2 {
+    background-color: green;
+    border: 10px solid 1px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+/* пример хорошего CSS кода */
+.svetofor div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;
+}
+.green {
+    background-color: green;
+}
