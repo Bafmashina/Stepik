@@ -1,8 +1,8 @@
 .forma {
     background-repeat: no-repeat;
     background: url(../img/main/Fon1.jpg);
-    border: 2px solid blue;
-    border-radius: 5px;
+    border: 2px solid rgb(121, 121, 196);
+    border-radius: 20px;
     width: 200px;
     height: 200px
 }
@@ -17,8 +17,9 @@
 .table {
     background: url(/img/main/Fon1.jpg);
     border: 1px solid grey;
-    border-radius: 5px;
-    border-left-color: aqua;
+    border-radius: 20px;
+    border-left-color: rgb(67, 153, 153);
+    border-left-width: 10px;
     border-right: 8px;
     border-top-width: 8px;
     width: 225px;

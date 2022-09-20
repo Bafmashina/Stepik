@@ -1,0 +1,50 @@
+/* Работа со шрифтами */
+p { /* font-family= выбираем шрифт */
+    font-family: monospace;
+     /*font-size=  размер шрифта */
+    font-size: 25px;
+    /* font-weight= настройка шрифта */
+    font-weight: 500;
+    /* line-height= размер между строками */
+    line-height: 50px;
+    /* text-align= меняет располоэение текста */
+    text-align: initial;
+    /* text-decoration= декарируем текст */
+    text-decoration: none;
+    text-transform: unset;
+
+}
+/* убираем подчеркивание */
+a {
+    font-size: 18px;
+    font-family: monospace;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+ul {
+    /* убираем точки у списка */
+    list-style: none;
+}
+/* УРОК 2.6 */
+/* [*]= применяет стили ко всему */
+* {
+    box-sizing: border-box;
+}
+.box {
+    /* box-sizing:border-box= не меняет размер бллока при втавки элемента */
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+}
+.box1 {
+    background-color: rgb(190, 142, 114);
+    /* разметка блоков */
+    margin: 10px 40px 30px;
+    /* padding= отступы внутри кончтрукции */
+    padding: 10px;
+    /* margine-bottom= добовляет отступ снизу */
+    margin-bottom: 10px;
+}
+.box2 {
+    background-color: rgb(93, 112, 141);
+}

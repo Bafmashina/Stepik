@@ -1,0 +1,36 @@
+/* делаем фон */
+html {
+    background: url(img/main/fon4.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1 {
+    background: url(img/main/fon2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 4px rgb(156, 55, 97);
+    border-radius: 30px;
+    width: 500px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 75px;
+    font-weight: lighter;
+    line-height: 30px;
+    text-align: center;
+    text-transform: initial;
+    text-decoration: wavy;
+}
+hr {
+    border: none;
+    background: url(img/main/fon3.jpg);
+    height: 10px;
+    color: rgb(143, 70, 18);
+}
