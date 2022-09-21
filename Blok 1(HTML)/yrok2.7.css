@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+/* устанавливаем курсор на кнопку */
+button {
+    cursor: pointer;
+}
+/* hover= псевдоклас */
+a:hover {
+    text-decoration: none;
+    color: brown;
+}
+p:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+/* nth-child= выбирает элемент из списка */
+/* odd= нечетные, even= четные */
+.meny li:nth-child(3) {
+    color: red;
+    text-decoration: underline;
+}
+table tr:nth-child(even) {
+    background-color: dimgray;
+    color: beige;
+}
+/* псевдоэлемент before , обязательно должен быть content*/
+div::before {
+    content: "\00A9";
+}
+div::after {
+    content: "2";
+    color: aqua;
+    text-decoration: underline;
+}

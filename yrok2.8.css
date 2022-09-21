@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+div.parent {
+    height: 250px;
+    width: 250px;
+    border: 1px solid red;
+    display: flex;
+    /* flex-wrap: wrap; - перенос элементов на новую строку */
+    flex-wrap: wrap;
+    /* flex-direction: column - выставление в коллону */
+    /* justify-content= задает расположение элементам */
+    justify-content: center;
+    align-items: flex-end;
+    align-content: space-between;
+}
+.parent div:nth-child(3) {
+    color: red;
+    /* order= меняет местами элементы в родителе */
+    order: -1;
+}
+.parent div :nth-child(4) {
+    align-self: center;
+}
