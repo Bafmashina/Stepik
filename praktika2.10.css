@@ -1,0 +1,35 @@
+:root {
+    --gutter: 20px;
+    --bg: teal;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+.heder {
+    background-color:var(--bg) ;
+}
+.container {
+    background-color: aliceblue;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > div {
+    padding: 15px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    border: 1px solid gray;
+
+}
