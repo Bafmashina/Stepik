@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+.fon {
+    width: 1170px;
+    margin: 0 auto;
+}
+.fon--stat {
+    width: 900px;
+    background-color: darkcyan;
+}
+.content {
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blok {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-inline: 35px;
+}
+.blok>h1 {
+    margin-block-start: 0px;
+    margin-block-end: 5px;
+    color: #995931;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-family: 'Elsie Swash Caps';
+    font-weight: 900;
+    padding: 5px 10px;
+}
+.blok>h6 {
+    margin: 0;
+    font-weight: 100;
+    font-family: sans-serif;
+    color:white;
+    padding: 5px 10px;
+}
+.blok h1:hover {
+    background-color: cornflowerblue;
+    border-radius: 30%;
+
+}
+.blok h6:hover {
+    background-color: rgb(182, 44, 182);
+    border-radius: 40%;
+
+}

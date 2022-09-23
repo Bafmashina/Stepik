@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    background-image: url(img/main/fon4.jpg);
+}
+.stat {
+    border-radius: 10%;
+    
+    background-color: rgb(182, 170, 170);
+    width: 1300px;
+    margin: 0 auto;
+}
+.fon {
+    width: 1100px;
+    margin: 0 auto;
+}
+.rsp {
+    background-color: rgb(143, 102, 141);
+    border-radius: 15%;
+}
+.cont {
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    margin: 50px;
+    padding: 15px;
+}
+.blok h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+     padding: 40 25px;
+}
+.blok h1:hover {
+    border: 1px;
+    color: rgb(51, 155, 65);
+    background-color: antiquewhite;
+    border-radius: 30%;
+
+}
