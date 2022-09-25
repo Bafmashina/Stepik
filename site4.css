@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.box--inner {
+    text-align: center;
+}
+h1 {
+    max-height: 750px;
+    margin: 80px auto 40px;
+    /* line-height= размер между строк */
+    line-height: 45px;
+    font-weight: normal;
+}
+p {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    line-height: 30px;
+}
+.icon--box {
+    margin-bottom: 60px;
+}
+.icon--box i.fa {
+    color: rgb(63, 120, 226);
+    font-size: 90px;
+    margin: 0 50px;
+}
