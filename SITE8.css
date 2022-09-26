@@ -67,7 +67,7 @@ body {
     line-height: 25px;
 }
 .icons--title {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: serif;
     color: black;
     font-size: 25px;
     font-weight: 100;
@@ -79,4 +79,90 @@ body {
 .icons a {
     text-decoration: none;
 }
+/* ____________________________________________________________________________________________ */
+.team1 {
+    background-color: rgba(238, 228, 215, 0.801);
+}
+.container1 {
+    width: 1500px;
+    margin: 0 auto;
+    height: 450px;
+}
+.team1--inner1 {
+    text-align: center;
+}
+.team1--title {
+    text-transform: uppercase;
+    line-height: 5px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 100;
+    font-size: 50px;
+    font-family: serif;
+}
+.team1--line1 {
+    margin: 0 auto;
+    background-color: chocolate;
+    width: 200px;
+    height: 3px;
+}
+.container1--img {
+    position: absolute;
+    left: 300px;
+    height: 300px;
+    width: 300px;
+}
+.team1--teaxt1 {
+    margin-top: 60px;
+    max-width: 800px;
+    padding: 30px;
+}
+.team1--inner1 p {
+    margin-left: 350px;
+    line-height: 27px;
+    text-align: left;
+    font-size: 20px;
+    padding: 30px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+.team2 {
+    background-color: rgb(160, 194, 194);
+}
+.container2 {
+    width: 1500px;
+    height: 350px;
+    margin: 0 auto;
+}
+.team2--inner2 {
+    text-align: center;
+}
+.team2--title2 {
+    text-transform: uppercase;
+    line-height: 5px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 100;
+    font-size: 50px;
+    font-family: serif;
+}
+.team2--line2 {
+    margin: 0 auto;
+    background-color: chocolate;
+    width: 200px;
+    height: 3px;
+    margin-bottom: 30px;
+}
+.container2--img {
+    padding: 40px;
+    position: absolute;
+    left: 1300px;
+    height: auto;
+}
+.team2--text2 {
+    left: 450px;
+    position: absolute;
+    max-width: 800px;
+    text-align: right;
+}
+
 
