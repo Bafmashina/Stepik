@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+.team {
+    background-color: rgba(211, 211, 211, 0.568);
+}
+.team--inner {
+    text-align: center;
+}
+.team--title {
+    font-family: serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 100;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 40px;
+}
+.team--line {
+    width: 120px;
+    height: 3px;
+    background-color: rgb(233, 181, 52);
+    margin: 0 auto;
+}
+.team--text {
+    font-size: 18px;
+    padding: 5px 0 20px 0;
+    color: rgb(112, 111, 111);
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.icons {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.fa {
+    box-shadow: 0px 20px 20px 0px rgba(0, 1, 1, 0.2);
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    padding: 15px;
+    border: 3px solid;
+    border-radius: 50%;
+    color: rgb(233, 181, 52);
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.icons--text {
+    color: rgb(112, 111, 111);
+    max-width: 400px;
+    padding: 10px;
+    line-height: 25px;
+}
+.icons--title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: 100;
+}
+.icons i.fa:hover {
+    color: rgb(97, 119, 160);
+    background-color: rgb(213, 214, 214);
+}
+.icons a {
+    text-decoration: none;
+}
+
