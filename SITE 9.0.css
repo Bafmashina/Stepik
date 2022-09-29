@@ -12,6 +12,9 @@
 body {
     margin: 0;
 }
+.menu {
+    background-color: #c62314;
+}
 .container {
     background-image: url(img/Layer\ 13.png);
    width: 1011px;
@@ -142,8 +145,6 @@ h5 {
 /* =================================================================================================== */
 .menu2 {
     background-color: #130e27;
-    max-width: 1011px;
-    height: 120px;
     margin: 0 auto;
 }
 .container2 {
@@ -255,3 +256,38 @@ h5 {
     color: #fff;
 }
 /* ============================================================================================ */
+.menu4 {
+    background-color: #130e27;
+    margin: 0 auto;
+}
+.container4 {
+    width: 1011px;
+    height: 170px;
+    background-color: #130e27;
+    margin: 0 auto;
+}
+.menu4--inner4 {
+    text-align: center;
+}
+.text4 {
+    display: flex;
+}
+.rights {
+    padding-left: 40px;
+    font-size: 17px;
+    padding-top: 65px;
+    color: #fff;
+}
+.coon {
+    padding-left: 10px;
+    font-size: 18px;
+    padding-top: 63px;
+    color: #c62314;
+}
+.avt {
+    padding-top: 15px;
+    font-size: 50px;
+    margin-left: 340px;
+    font-family: Chocolatey;
+    color: #c62314;
+}
