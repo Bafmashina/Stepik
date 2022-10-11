@@ -10,7 +10,22 @@
   <p title="Подсказка" class="text">Абзац текста</p>
 
   <script>
-
+    // работа с атрибутами html тэгов
+    let elem = document.querySelector(`p`)
+    // метод hasAttribute проверяет существует ли title у выброного нами элемента
+    console.log(elem.hasAttribute(`title`))
+    // getAttribute = получаем значение атрибута
+    console.log(elem.getAttribute(`title`))
+    // setAttribute = указывает для нашего элемента любой арибут
+    elem.setAttribute("class", "new_text")
+    // проходимся по всем атрибутам с помощью цикла for off
+    for(let atrr of elem.attributes) {
+      console.log(`${atrr.name} = ${atrr.value}`)
+    }
+    // removeAttribute = можем удалить какойто элемент
+    elem.removeAttribute("title")
+    // console.dir() = выводит все атрибуты элемента 
+    console.dir(elem)
   </script>
 </body>
 </html>
