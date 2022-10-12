@@ -10,7 +10,18 @@
 
 
   <script>
-
+    let ul = document.createElement(`ul`)
+    // body.append() = добовляет выбранный  элемент в body
+    document.body.append(ul)
+    while(true) {
+      let date = prompt("Введите текст для элемента списка", "")
+      if(!date) {
+        break
+      }
+      let li = document.createElement(`li`)
+      li.textContent = date
+      ul.append(li)
+    }
   </script>
 </body>
 </html>

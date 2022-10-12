@@ -13,7 +13,11 @@
   </div>
 
   <script>
-
+    // клонирование элемента
+    let div = document.querySelector(`div`)
+    let div2 = div.cloneNode(true)
+    div2.querySelector(`p`).textContent = "Ещё одно сообщение"
+    div.before(div2)
   </script>
 </body>
 </html>
