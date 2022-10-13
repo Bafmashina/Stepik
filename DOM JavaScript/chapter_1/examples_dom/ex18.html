@@ -12,8 +12,70 @@
   <div class="container"></div>
 
   <script>
-    
-  </script>
+    function createCalendar(elem, year, month) {
+      elem = document.querySelector(elem)
+
+      let mon = month - 1;// месяца в js идут от 1 до 11
+      let d = new Date(year, mon);
+
+      let table = `
+      <table>
+        <caption>${month}.${year}</caption>
+        <tr>
+          <th>нп</th>
+          <th>вт</th>
+          <th>ср</th>
+          <th>чт</th>
+          <th>пт</th>
+          <th>сб</th>
+          <th>вс</th>
+        </tr>
+        <tr>
+      `;
+      
+      // пробелы для первого ряда
+      // с понедельника до начала месяца
+      for(let i=0; i<getDay(d); i++) {
+        table += `<td></td>`
+      }
+
+      //  создает ячейкм календаря
+      while(d.getMonth() == mon) {
+        table += `<td>` + d.getDate() + `</td>`
+
+         if(getDay(d) %7 == 6) { //создаем перевод стороки с новой
+          table += `</tr><tr>`;
+        }
+
+        d.setDate(d.getDate()+1);
+      }
+
+      // добовляем пустые ячейки в конце
+      if (getDay(d) != 0) {
+        for(let i=getDay(d); i<7; i++) {
+          table += `<td></td>`
+        }
+      }
+      // закрытие таблицы
+      table += `</tr></table>`;
+
+      // insertAdjacentHTML = вставляет созданые элементы в DOM дерево
+      // afterbegin = задает позицию куда будет вставляться элемент
+      elem.insertAdjacentHTML('afterbegin', table);
+    }
+
+    // Функция делает так чтобы дни недели начиналось с понедельника
+    function getDay(date) {
+      let day = date.getDay();
+      if(day == 0) day = 7; //делвем воскресенье последним днем
+      return day - 1;
+    }
+// ======================================
+// создаем поаторяющийс цикл для 12 месяцев
+    for(let i=12; i>0; i--) {
+    createCalendar(`.container`, 2022, i)
+    }
+   </script>
 </body>
 
 </html>
