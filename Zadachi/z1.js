@@ -98,3 +98,36 @@
 // for(let i =0; i<n; i++) {
 //     console.log(k)
 // }
+// ===========================================================
+// Задача 10
+// Цикл с условием
+// let a = 11, b = 3
+// let i = 0
+// while(i <= a-b) {
+//     i += b
+// }
+// console.log(`Длтна отрезка незанятой части A: ${a - i}`)
+// ===============================================================
+// Задача 11
+// Оператор выбора
+let k = 3
+switch(k) {
+    case 1:
+        console.log("Плохо")
+        break
+    case 2:
+        console.log("Неудовлетварительно")
+        break
+    case 3:
+        console.log("Удовлетварительно")
+        break
+    case 4:
+        console.log("Хорошо")
+        break
+    case 5:
+        console.log("Отлично")
+        break
+    default:
+        console.log("Ошибка")
+        break
+}
