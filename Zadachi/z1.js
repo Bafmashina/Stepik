@@ -93,7 +93,7 @@
 // }
 // =============================================================
 // Задача 9
-// Вывести N раз число K
+// Цикл с параметром
 // let k = 4, n = 8
 // for(let i =0; i<n; i++) {
 //     console.log(k)
@@ -110,24 +110,33 @@
 // ===============================================================
 // Задача 11
 // Оператор выбора
-let k = 3
-switch(k) {
-    case 1:
-        console.log("Плохо")
-        break
-    case 2:
-        console.log("Неудовлетварительно")
-        break
-    case 3:
-        console.log("Удовлетварительно")
-        break
-    case 4:
-        console.log("Хорошо")
-        break
-    case 5:
-        console.log("Отлично")
-        break
-    default:
-        console.log("Ошибка")
-        break
+// let k = 3
+// switch(k) {
+//     case 1:
+//         console.log("Плохо")
+//         break
+//     case 2:
+//         console.log("Неудовлетварительно")
+//         break
+//     case 3:
+//         console.log("Удовлетварительно")
+//         break
+//     case 4:
+//         console.log("Хорошо")
+//         break
+//     case 5:
+//         console.log("Отлично")
+//         break
+//     default:
+//         console.log("Ошибка")
+//         break
+// }
+// =================================================================
+// Задача 12
+// Цикл с параметром
+let a = 5, b = 12, count = 0
+for(let i=a; i<=b; i++) {
+    console.log(i)
+    count++
 }
+console.log(`Всего чисел :` + count)
