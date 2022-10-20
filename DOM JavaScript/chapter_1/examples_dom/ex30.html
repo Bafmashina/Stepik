@@ -16,7 +16,43 @@
   </div>
 
   <script>
-    
+    function myTimer (seconds) {
+      let startDate = new Date()
+      let endDate = new Date()
+      endDate = endDate.setSeconds(endDate.getSeconds() + seconds)
+
+      // получим разницу во времени загрузки
+      let interval = setInterval(() => {
+        // В этой функции выполняеться таймер
+        // переменная с текущей датой
+        let currentDate = new Date()
+
+        // расчитываем сколько процентов осталось
+        // Math.trunc() = метод округления
+        let leftPercent = Math.trunc((endDate - currentDate) / (endDate - startDate) * 100)
+
+        // переменная сколько процетов уже прошло
+        let passedPercent = +(100 - leftPercent)
+
+        // находим нужные элементы чтобы все вывести
+        // textContent = позволяет считывать или задавать текстовое содержимое элемента
+        document.querySelector(`.timer-progressbar__fill`).textContent = passedPercent + `%`
+        document.querySelector(`.timer-progressbar__fill`).style.width = passedPercent + `%`
+
+        document.querySelector(`.timer-progressbar__empty`).textContent = leftPercent + `%`
+        document.querySelector(`.timer-progressbar__empty`).style.width = leftPercent + `%`
+
+        if(leftPercent === 0) {
+          // clearInterval() = завершает действее выбраного интервала
+          clearInterval(interval)
+
+          document.querySelector(`.timer-progressbar__empty`).style.display = `none`
+        }
+      }, 1000)
+    }
+
+    // Вызываем функцию
+    myTimer(9)
   </script>
 </body>
 
