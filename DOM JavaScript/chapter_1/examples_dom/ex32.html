@@ -11,7 +11,47 @@
 <body>
 
   <script>
+    // Делаем локальное хранилище
+    // setItem() = устанавливает значение для локального хранилища
+    localStorage.setItem(`key1`, 546)
+    localStorage.setItem(`key2`, "Обычная строчка")
+    localStorage.setItem(`key3`, false)
 
+    // как получить элемент
+    console.log(localStorage.getItem(`key2`))
+
+    // получение элемента по ключу
+    console.log(localStorage.key(0))
+
+    // посмотреть длину локального хранилища
+    console.log(localStorage.length)
+
+    // Использование циклов для обхода данных
+    // =============================================================
+    // получение ключей через "for(let .... of ....)"
+    for(let key of Object.keys(localStorage)) {
+      console.log(`${key}: ${localStorage.getItem(key)}`)
+    }
+
+    // использование цикла "for(let .... in ......)"
+    for(let key in localStorage) {
+      if(!localStorage.hasOwnProperty(key)) {
+        continue;
+      }
+      console.log(`${key}: ${localStorage.getItem(key)}`)
+    }
+
+    // цикл обхода элементов в хранилищк
+    for(let i=0; i<localStorage.length; i++) {
+      let key = localStorage.key(i)
+      console.log(`${key}: ${localStorage.getItem(key)}`)
+    }
+
+    // удаление элемента под определенным ключем
+    // localStorage.removeItem(`key3`)
+
+    // полностью отчистить локальное хранилище
+    // localStorage.clear()
   </script>
 </body>
 

@@ -196,10 +196,22 @@
 // =================================================================
 // Задача 18 
 // Логические выражения
-let a = 24 
-function chetnoe(a) {
-    if(!(a%2)) {
-        return true
-    } else return false
+// let a = 24 
+// function chetnoe(a) {
+//     if(!(a%2)) {
+//         return true
+//     } else return false
+// }
+// console.log(chetnoe(a))
+// ===================================================================
+// Задача 19
+// Последовательности
+let a =[11, 3, 6, 22, 54, 65, 11, 22, 12, 8]
+function arraySum(arr) {
+    let result = 0
+    for(let i=0; i<arr.length; i++) {
+        result += arr[i]
+    }
+    return result
 }
-console.log(chetnoe(a))
+console.log(arraySum(a))
