@@ -206,12 +206,34 @@
 // ===================================================================
 // Задача 19
 // Последовательности
-let a =[11, 3, 6, 22, 54, 65, 11, 22, 12, 8]
-function arraySum(arr) {
-    let result = 0
-    for(let i=0; i<arr.length; i++) {
-        result += arr[i]
-    }
-    return result
+// let a =[11, 3, 6, 22, 54, 65, 11, 22, 12, 8]
+// function arraySum(arr) {
+//     let result = 0
+//     for(let i=0; i<arr.length; i++) {
+//         result += arr[i]
+//     }
+//     return result
+// }
+// console.log(arraySum(a))
+// ====================================================================
+// Задача 20
+// Процедуры и функции
+// let numbers = [0, 1, 2, 3, 4]
+// function PowerA3(a) {
+//     return a ** 3
+// } 
+// for(let i=0; i<numbers.length; i++) {
+//     console.log(PowerA3(numbers[i]))
+// }
+// ===========================================================
+// Задаяа 21 
+// Процедуры и функции
+let radius = [3, 4, 8, 5]
+function CircleS(r) {
+    // Math.floor() = округляет в мкеьшую сторону
+    // Math.PI = "pi" или = 3.14
+    return Math.floor(Math.PI * r ** 2)
 }
-console.log(arraySum(a))
+for(let i=0; i<radius.length; i++) {
+    console.log(`Circle №${i + 1} S= ` + CircleS(radius[i]))
+}
