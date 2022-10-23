@@ -228,12 +228,29 @@
 // ===========================================================
 // Задаяа 21 
 // Процедуры и функции
-let radius = [3, 4, 8, 5]
-function CircleS(r) {
-    // Math.floor() = округляет в мкеьшую сторону
-    // Math.PI = "pi" или = 3.14
-    return Math.floor(Math.PI * r ** 2)
+// let radius = [3, 4, 8, 5]
+// function CircleS(r) {
+//     // Math.floor() = округляет в меньшую сторону
+//     // Math.PI = "pi" или = 3.14
+//     return Math.floor(Math.PI * r ** 2)
+// }
+// for(let i=0; i<radius.length; i++) {
+//     console.log(`Circle №${i + 1} S= ` + CircleS(radius[i]))
+// }
+// ================================================================
+// Задача 22 
+// Ввод и вывод данных, оператор присваевания
+// let d = 8
+// function length (d) {
+//     console.log(`Длина окружнасти = ` + Math.PI * d)
+// }
+// length(d)
+// =================================================================
+// Задача 23
+// Ввод и вывод данных, оператор присваевания
+let a = 7
+function cube (a) {
+    console.log(`V = ` + a**3)
+    console.log(`S = ` + 6 * (a**2))
 }
-for(let i=0; i<radius.length; i++) {
-    console.log(`Circle №${i + 1} S= ` + CircleS(radius[i]))
-}
+cube(a)
