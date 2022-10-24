@@ -248,9 +248,27 @@
 // =================================================================
 // Задача 23
 // Ввод и вывод данных, оператор присваевания
-let a = 7
-function cube (a) {
-    console.log(`V = ` + a**3)
-    console.log(`S = ` + 6 * (a**2))
+// let a = 7
+// function cube (a) {
+//     console.log(`V = ` + a**3)
+//     console.log(`S = ` + 6 * (a**2))
+// }
+// cube(a)
+// ================================================================
+// Задача 24
+// Целые числа
+// let a = 18, b = 4
+// let Dlina = Math.floor(a/b)
+// console.log(Dlina)
+// ===============================================================
+// Задача 25
+// Логические выражения
+let a = 18, b = -5
+function isBetween(a,b) {
+    if(a>=0 && b < -2) {
+        return true
+    } else
+    return false
 }
-cube(a)
+console.log(isBetween(a,b))
+

@@ -27,7 +27,20 @@
   </div>
 
   <script>
+    let btns = document.querySelectorAll(`.slider__item`)
+    for(let btn of btns) {
+      // оброботчик события для каждой кнопки
+      btn.onclick = function() {
+        document.querySelector(`.slider__breadcrumbs .active`).classList.remove(`active`)
 
+        // добовляем класс "active" на элемент при нажатии
+        this.classList.add(`active`)
+
+        // смена каптинок для выбраееоно элемента
+        // setAttribute() = добовляет атрибут выбранному элементу
+        document.querySelector(`.slider__image img`).setAttribute(`src`, `../img/${this.innerHTML}.jpg`)
+      }
+    }
   </script>
 </body>
 
