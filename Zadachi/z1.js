@@ -289,4 +289,29 @@
 // ===============================================================
 // Задача 28
 // Логические выражения
-
+// let a = 1, b = 2, c = 3
+// function neravenstvo(a, b, c) {
+//     if(a < b && b < c) {
+//         return true
+//     } else 
+//     return false
+// }
+// console.log(neravenstvo(a, b, c))
+// ====================================================================
+// Задача 29
+// Условный оператор
+let posetive = 0, negative = 0, nulevoe = 0
+let a = 0
+if(a > 0) {
+    a = a + 1
+    posetive++
+    console.log(`Положительное : ${a}`)
+} else if(a < 0) {
+    a = a - 2
+    negative++
+    console.log(`Отрицательное : ${a}`)
+} else if (a === 0) {
+    a = 10
+    nulevoe++
+    console.log(`Нулевое : ${a}`)
+}

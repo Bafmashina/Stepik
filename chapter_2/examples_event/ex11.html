@@ -25,7 +25,16 @@
   </div>
 
   <script>
-    
+    // событие всплытия
+    document.querySelector(`.block`).addEventListener("click", function(e) {
+      console.log(this)
+      console.log(e.target)
+    })
+
+    document.querySelector(`.stop`).addEventListener("click", function(e) {
+      // stopPropagation() = прекращает всплытие элемента
+      e.stopPropagation()
+    })
   </script>
 </body>
 

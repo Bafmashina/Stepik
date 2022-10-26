@@ -21,7 +21,12 @@
   </form>
 
   <script>
-
+    for(let elem of document.querySelectorAll(`*`)) {
+      // добовляем ко всем событиям оброботчик события
+      elem.addEventListener(`click`, function(e) {
+        console.log(elem.tagName + " - Фаза " + e.eventPhase)
+      }, true)
+    }
   </script>
 </body>
 

@@ -32,7 +32,22 @@
   </table>
 
   <script>
-
+    let currentTD;
+    table.onclick = function(e) {
+      // closest() = ищет ближайший  родитель элемента
+      let td = e.target.closest(`td`)
+      if(!td) return
+      // containts() = проверяет вложенность элемента
+      if(!table.contains(td)) return
+      hover(td)
+    }
+    function hover(td) {
+      if(currentTD) {
+        currentTD.classList.remove(`bgc`)
+      }
+      currentTD = td
+      currentTD.classList.add(`bgc`)
+    }
   </script>
 </body>
 
