@@ -54,7 +54,29 @@
 
     createTree('body', data);
 
-    
+    // ========================================
+
+    // помещаем все текстовые узлы в <span>
+      let ul = document.querySelector(`ul`)
+      for(let li of ul.querySelectorAll(`li`)) {
+        let span = document.createElement(`span`)
+        li.prepend(span)
+
+        // nextSibling = это свойстово помещает текстовый узел во внутрь тега <span>
+        span.append(span.nextSibling)
+      }
+
+      // ловим клики на элементе
+      ul.onclick = function(event) {
+        if(event.target.tagName != `SPAN`) return
+        let childrenContainer = event.target.parentNode.querySelector(`ul`)
+
+        // проверяем на сущевствование переменной и выходим
+        if(!childrenContainer)return
+
+        // если переменная сущевстыует
+        childrenContainer.hidden = ! childrenContainer.hidden
+      }
   </script>
 </body>
 

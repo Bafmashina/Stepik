@@ -300,18 +300,44 @@
 // ====================================================================
 // Задача 29
 // Условный оператор
-let posetive = 0, negative = 0, nulevoe = 0
-let a = 0
-if(a > 0) {
-    a = a + 1
-    posetive++
-    console.log(`Положительное : ${a}`)
-} else if(a < 0) {
-    a = a - 2
-    negative++
-    console.log(`Отрицательное : ${a}`)
-} else if (a === 0) {
-    a = 10
-    nulevoe++
-    console.log(`Нулевое : ${a}`)
-}
+// let posetive = 0, negative = 0, nulevoe = 0
+// let a = 0
+// if(a > 0) {
+//     a = a + 1
+//     posetive++
+//     console.log(`Положительное : ${a}`)
+// } else if(a < 0) {
+//     a = a - 2
+//     negative++
+//     console.log(`Отрицательное : ${a}`)
+// } else if (a === 0) {
+//     a = 10
+//     nulevoe++
+//     console.log(`Нулевое : ${a}`)
+// }
+// ================================================================
+// Задача 30
+// Условный оператор
+// let a = 8, b = 2, c = -1
+// let count = 0
+// function isPosetive(num) {
+//     if(num > 0) {
+//         count++
+//     }
+// }
+// isPosetive(a)
+// isPosetive(b)
+// isPosetive(c)
+// console.log(count)
+// =================================================================
+// Задача 31
+// Условный оператор
+// let a = 8, b =3 
+// if(a < b) {
+//     console.log(b)
+// } else {
+//     console.log(a)
+// }
+// ================================================================
+// Задача 32
+// Условный оператор
