@@ -17,7 +17,41 @@
   <button data-tooltip="Подсказка с<br> HTML тегами">Кнопка 2</button>
 
   <script>
-    
+    let tooltipElem;
+    document.onmouseover = function(e) {
+      let target = e.target
+      let tooltipHtml = target.dataset.tooltip
+      if(!tooltipHtml) return
+      tooltipElem = document.createElement(`div`)
+      tooltipElem.className = "tooltip"
+      tooltipElem.innerHTML = tooltipHtml
+      document.body.append(tooltipElem)
+
+      // устанавливаем позицию
+      // getBoundingClientRect() = предоставляет информацию о расположении элемента относительно области
+      let coords = target.getBoundingClientRect()
+
+      // Расщитываем кардинату для левой позиции
+      // offsetWidth = возвращает ширину элемента
+      let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2
+      if(left < 0) left = 5
+
+      // Расщитываем кардинату для позиции сверху
+      let top = coords.top - tooltipElem.offsetHeight - 5
+      if(top < 0) top = coords.top + target.offsetHeight + 5
+
+      // Установка значений для позиции элемента
+      tooltipElem.style.left = left + `px`
+      tooltipElem.style.top = top + `px`
+    }
+
+    // Оброботчик события когда мышка покидает элемент
+    document.onmouseout = function(e) {
+      if(tooltipElem) {
+        tooltipElem.remove()
+        tooltipElem = null
+      }
+    }
   </script>
 </body>
 

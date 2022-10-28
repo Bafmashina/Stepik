@@ -341,3 +341,58 @@
 // ================================================================
 // Задача 32
 // Условный оператор
+// let a = 9, b = 5
+// if(b < a) {
+//     console.log(b)
+// } else console.log(a)
+// ================================================================
+// Задача 33
+// Оператор выбора - (switch)
+// let month = 8 
+// switch (month) {
+//     case 1:
+//     case 2:
+//     case 12:
+//         console.log(`Зима - Winter`)
+//         break;
+//     case 3:    
+//     case 4:    
+//     case 5:
+//         console.log(`Весна - Spring`)
+//         break; 
+//     case 6:       
+//     case 7:       
+//     case 8: 
+//         console.log(`Лето - Summer`)
+//         break;
+//     case 9:    
+//     case 10:    
+//     case 11:
+//         console.log(`Осень - Autumn`) 
+//         break;   
+// }
+// ==========================================================================
+// Задвча 34
+// Оператор выбора - (switch)
+let M = 5
+let type = 2
+switch (M) {
+    case 1:
+        console.log(M);
+        break;
+    case 2:
+        console.log(M/1000000);
+        break;
+    case 3:
+        console.log(M/1000);
+        break;
+    case 4:
+        console.log(M*1000);  
+        break;
+    case 5:
+        console.log(M*100); 
+        break;
+    default:
+        console.log(`err`)
+        break;                 
+}
