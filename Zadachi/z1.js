@@ -374,25 +374,48 @@
 // ==========================================================================
 // Задвча 34
 // Оператор выбора - (switch)
-let M = 5
-let type = 2
-switch (M) {
-    case 1:
-        console.log(M);
-        break;
-    case 2:
-        console.log(M/1000000);
-        break;
-    case 3:
-        console.log(M/1000);
-        break;
-    case 4:
-        console.log(M*1000);  
-        break;
-    case 5:
-        console.log(M*100); 
-        break;
-    default:
-        console.log(`err`)
-        break;                 
+// let M = 5
+// let type = 2
+// switch (M) {
+//     case 1:
+//         console.log(M);
+//         break;
+//     case 2:
+//         console.log(M/1000000);
+//         break;
+//     case 3:
+//         console.log(M/1000);
+//         break;
+//     case 4:
+//         console.log(M*1000);  
+//         break;
+//     case 5:
+//         console.log(M*100); 
+//         break;
+//     default:
+//         console.log(`err`)
+//         break;                 
+// }
+// ==========================================================================
+// Задача 35
+// Цикл с параметром
+// let coast = 250
+// for(let i=1; i<=10; i++) {
+//     console.log(coast * i)
+// }
+// =========================================================================
+// Задача 36
+// Цикл с параметром
+// let coast = 250
+// for(let i=0.1; i<=1; i = i + 0.1) {
+//     console.log(Math.round(coast * i))
+// }
+// ==========================================================================
+// Задача 37
+// Цикл с параметром
+let coast = 300
+for(let i=1.2; i<=2; i = i + 0.2) {
+    console.log(`i: `+ i)
+    console.log(`coast: `+ Math.random(coast * i))
+    console.log(`-----------------------------`)
 }
