@@ -413,9 +413,36 @@
 // ==========================================================================
 // Задача 37
 // Цикл с параметром
-let coast = 300
-for(let i=1.2; i<=2; i = i + 0.2) {
-    console.log(`i: `+ i)
-    console.log(`coast: `+ Math.random(coast * i))
-    console.log(`-----------------------------`)
+// let coast = 300
+// for(let i=1.2; i<=2; i = i + 0.2) {
+//     console.log(`i: `+ i)
+//     console.log(`coast: `+ Math.random(coast * i))
+//     console.log(`-----------------------------`)
+// }
+// ============================================================================
+// Задача 38
+// Цикл с условием
+// let a = 9
+// function stepen3 (a) {
+//     let i = 1
+//     while(i < a) {
+//         if(Math.pow(3, i) == a) {
+//             return true
+//         }
+//         i++
+//     }
+//     return false
+// }
+// console.log(stepen3(a))
+// ================================================================================
+// Задача 39 
+// Процедуры и функции
+let a = 2
+function PowerA234 (a) {
+    let b = Math.pow(a, 2)
+    let c = Math.pow(a, 3)
+    let d = Math.pow(a, 4)
+    return [b, c, d]
 }
+console.log(PowerA234(a))
+

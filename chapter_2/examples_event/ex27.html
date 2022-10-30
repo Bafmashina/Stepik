@@ -15,7 +15,43 @@
   </div>
 
   <script>
-    
+    let btn = slider.querySelector(`.slider__btn`)
+    btn.onmousedown = function(e) {
+      e.preventDefault()
+
+      // shiftX = храниться позиция кнопки
+      let shiftX = e.clientX - btn.getBoundingClientRect().left
+
+      // Добовляем оброботчики событий
+      document.addEventListener(`mousemove`, onMouseMove)
+      document.addEventListener(`mouseup`, onMouseUp)
+
+      // Функция для движения слайдера
+      function onMouseMove(e) {
+        // создаем новое положение для кнопки
+        let newLeft = e.clientX - shiftX - slider.getBoundingClientRect().left
+
+        // Делаем так чтобы при резком движении ползунка он возвращялся в цачало или в конец
+        if(newLeft < 0)
+          newLeft = 0
+      // Переменная с правой границы
+        let rightEdge = slider.offsetWidth - btn.offsetWidth
+        if(newLeft > rightEdge)
+        newLeft = rightEdge
+
+        btn.style.left = newLeft + `px`
+      }
+
+      function onMouseUp() {
+        document.removeEventListener(`mouseup`, onMouseUp)
+        document.removeEventListener(`mousemove`, onMouseMove)
+      }
+    }
+
+    // Дополнительный оброботчик события
+    btn.ondragstart = function() {
+      return false
+    }
   </script>
 </body>
 
