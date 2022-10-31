@@ -437,12 +437,38 @@
 // ================================================================================
 // Задача 39 
 // Процедуры и функции
-let a = 2
-function PowerA234 (a) {
-    let b = Math.pow(a, 2)
-    let c = Math.pow(a, 3)
-    let d = Math.pow(a, 4)
-    return [b, c, d]
+// let a = 2
+// function PowerA234 (a) {
+//     let b = Math.pow(a, 2)
+//     let c = Math.pow(a, 3)
+//     let d = Math.pow(a, 4)
+//     return [b, c, d]
+// }
+// console.log(PowerA234(a))
+// ===============================================================================
+// Задача 40 
+// Процедуры и функции
+let a = 3, b = 8, c = 14
+function sumFromAtoB(a, b) {
+    let sum = 0
+    for(let i=a; i<=b; i++) {
+        sum = sum + i
+    }
+    return sum
 }
-console.log(PowerA234(a))
 
+function SumRange(a, b, c) {
+    if(c) {
+        if(a>b || b>c) {
+            return 0
+        }
+        let sumAB = sumFromAtoB(a, b)
+        let sumBC = sumFromAtoB(b, c)
+        return[sumAB, sumBC]
+    }
+    if(a>b) {
+        return 0
+    }
+    return sumFromAtoB(a, b)
+}
+console.log(SumRange(a, b, c))

@@ -11,7 +11,17 @@
 <body>
 
   <script>
-    
+    // document.addEventListener(`keyup`, function(e) {
+    //   console.log(`Код: ` + e.code)
+    //   console.log(`Символ: ` + e.key)
+    // })
+
+    // Оюработчик проверяет нажатие клавить "CTRL" и "Z"
+    document.addEventListener(`keydown`, function (e) {
+      if(e.code === `KeyZ` && (e.ctrlKey || e.comandKey)) {
+        console.log(`Вы нажали CTRL + Z`)
+      }
+    })
   </script>
 </body>
 
