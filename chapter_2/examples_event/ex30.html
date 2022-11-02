@@ -37,8 +37,26 @@
     // let radioBtns = form.elements.radioBtn
     // console.log(radioBtns[0])
 
-    let form = document.forms[0]
+    // let form = document.forms[0]
+    // let select = form.elements.mySelect2
+    // let selected = Array.from(select.options)
+    // .filter(option => option.selected)
+    // .map(option => option.value)
 
+    // console.log(selected)
+
+    // let fieldset = form.elements.myFieldset
+    // console.log(fieldset.elements.password)
+
+    // let select = form.elements.mySelect
+    // console.log(select.options[2].selected)
+
+    // select.options[2].selected = true
+
+    let form = document.forms[0]
+    let select = form.elements.mySelect2
+    let newOpt = new Option("Элемент 4", "item7", true)
+    select.append(newOpt)
   </script>
 </body>
 

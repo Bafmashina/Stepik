@@ -448,27 +448,57 @@
 // ===============================================================================
 // Задача 40 
 // Процедуры и функции
-let a = 3, b = 8, c = 14
-function sumFromAtoB(a, b) {
-    let sum = 0
-    for(let i=a; i<=b; i++) {
-        sum = sum + i
-    }
-    return sum
-}
+// let a = 3, b = 8, c = 14
+// function sumFromAtoB(a, b) {
+//     let sum = 0
+//     for(let i=a; i<=b; i++) {
+//         sum = sum + i
+//     }
+//     return sum
+// }
 
-function SumRange(a, b, c) {
-    if(c) {
-        if(a>b || b>c) {
-            return 0
-        }
-        let sumAB = sumFromAtoB(a, b)
-        let sumBC = sumFromAtoB(b, c)
-        return[sumAB, sumBC]
-    }
-    if(a>b) {
-        return 0
-    }
-    return sumFromAtoB(a, b)
+// function SumRange(a, b, c) {
+//     if(c) {
+//         if(a>b || b>c) {
+//             return 0
+//         }
+//         let sumAB = sumFromAtoB(a, b)
+//         let sumBC = sumFromAtoB(b, c)
+//         return[sumAB, sumBC]
+//     }
+//     if(a>b) {
+//         return 0
+//     }
+//     return sumFromAtoB(a, b)
+// }
+// console.log(SumRange(a, b, c))
+// ===========================================================================
+// Задача 41
+// Процедуры и функции
+// let arr = [3, 5, 8, 4, 6, 8, 9, 2, 1, 7]
+// let evenCounter = 0
+// function Even(k) {
+//     return (k%2)? false : true
+// }
+
+// for(let i=0; i<arr.length; i++) {
+//     if(Even(arr[i])) evenCounter++
+// }
+// console.log(evenCounter)
+// ===========================================================================
+// Задача 42
+// Ввод и вывод данных, оператор присваивания
+// let a = 10, b = 4 
+// function Reshenie (a, b) {
+//     console.log("Среднее арефметическое = " + (a + b)/2)
+// }
+// Reshenie(a, b)
+// =====================================================================
+// Задача 43
+// Ввод и вывод двнных, оператор присваевания
+let a = 8, b = 5
+function SredneeArefmetich (a, b) {
+    // Math.sqrt() = возврощает квадратный корень числа
+    console.log("Среднее арефметическое = " + Math.sqrt(a * b))
 }
-console.log(SumRange(a, b, c))
+SredneeArefmetich(a, b)

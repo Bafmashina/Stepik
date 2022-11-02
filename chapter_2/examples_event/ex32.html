@@ -13,7 +13,41 @@
   <img src="..//img/1.jpg" id="image">
 
   <script>
+    // Делаеи изоброжение под фокусом
+    image.tabIndex = 0
+
+    // Обробатываем клик по элементу
+    image.onclick = function() {
+      this.style.left = this.getBoundingClientRect().left + `px`
+      this.style.top = this.getBoundingClientRect().top + `px`
+      this.style.position = `fixed`
+    }
     
+    // Оброботчик события нажатия кливиш
+    image.onkeydown = function(e) {
+      switch(e.key) {
+        // Для перемещения по Левой стороне
+        case `ArrowLeft`:
+          // parseInt() = превращает строковое значение в цифровое
+          this.style.left = parseInt(this.style.left) - this.offsetWidth + `px`
+          return false
+
+          // Для перемещения по Правой стороне
+          case `ArrowRight`:
+          this.style.left = parseInt(this.style.left) + this.offsetWidth + `px`
+          return false
+
+          // Для перемещения по верху - "Up"
+          case `ArrowUp`:
+          this.style.top = parseInt(this.style.top) - this.offsetHeight + `px`
+          return false
+
+          // Для перемещения по низу - "down"
+          case `ArrowDown`:
+          this.style.top = parseInt(this.style.top) + this.offsetHeight + `px`
+          return false
+      }
+    }
   </script>
 </body>
 
