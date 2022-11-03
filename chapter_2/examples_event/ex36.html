@@ -11,7 +11,20 @@
 <body>
 
   <script>
+    window.onbeforeunload = function(e) {
+      return false
+    }
 
+    // window.addEventListener(`unload`, function(e) { 
+    // })
+
+    // window.onload = function(e) {
+    //   console.log(`Ресурсы быля загружены`)
+    // }
+
+    // document.addEventListener(`DOMContentLoaded`, function(e) {
+    //   console.log(`DOM - построен`)
+    // })
   </script>
 </body>
 

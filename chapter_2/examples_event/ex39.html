@@ -22,6 +22,35 @@
   <button id="button">Кнопка с текстом</button>
 
   <script>
+    document.onselectionchange = function() {
+      let {anchorNode, anchorOffset, focusNode, focusOffset} = document.getSelection()
+
+      // Выведение результатов в "input"
+      from.value = `${anchorNode && anchorNode.data}: ${anchorOffset}`
+      to.value = `${focusNode && focusNode.data}: ${focusOffset}`
+
+      // getSelection() = возврощает выделенный пользователем объект "selection"
+      console.log(document.getSelection().toString())
+    }
+
+    // Самлстлятельно выделяем текст
+    // setBaseAndExtent() = устанавливает выбранное выделение
+    // childNodes = получает дочерние элементы вложенные в родительский
+    document.getSelection().setBaseAndExtent(p, 0, p, p.childNodes.length)
+
+    // Выделение в элементах формы
+    area.onselect = function() {
+      console.log(`Начало: ${area.selectionStart} Конец: ${area.selectionEnd}`)
+    }
+
+    // Изменение позиции курсора в "area"
+    area.onfocus = () => {
+      setTimeout(() => {
+        area.selectionStart = area.selectionEnd = 10
+      })
+    }
+
+    // Запрещаем элементу выделение
     
   </script>
 </body>
