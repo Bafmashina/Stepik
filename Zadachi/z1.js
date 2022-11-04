@@ -513,6 +513,23 @@
 // ===================================================================
 // Задача 45
 // Ввод и вывод данных, орерптор присваевания
-let a = 9, b = 3, c = 5
-console.log(`AC: ` + Math.sqrt((b - a)**2))
-console.log(`BC: ` + Math.sqrt((c - b)**2))
+// let a = 9, b = 3, c = 5
+// console.log(`AC: ` + Math.sqrt((b - a)**2))
+// console.log(`BC: ` + Math.sqrt((c - b)**2))
+// ====================================================================
+// Задача 46
+// Целые числа
+// toString() = преобразовывает элемент в строковоезначение "string"
+// split() = разделяет объект "string" на масив строк
+// let a = 23
+// let splited = a.toString().split(``)
+// console.log(Number(splited[0]) + Number(splited[1]))
+// console.log(Number(splited[0]) * Number(splited[1]))
+// =====================================================================
+// Задача 47
+// Целые числа
+// reverse() = меняет первый и последний элемен масива местами
+// join() = объеденяет все элементы массива в строку "string"
+let a = 48
+let splited = a.toString().split(``)
+console.log(a.toString().split(``).reverse().join(``))

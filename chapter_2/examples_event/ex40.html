@@ -63,7 +63,45 @@
   </div>
 
   <script>
-   
+   let form = document.forms.calculator
+
+  //  Устанавлмваем для 3 полей оброботчики события
+  form.money.oninput = calculate
+  form.months.onchange = calculate
+  form.interest.oninput = calculate
+
+  // Функция для полей
+  function calculate() {
+    // Переменная для хранения началного значения суммы
+    let initial = +form.money.value
+    if(!initial) return
+
+    // Переменная для процентной ставки
+    let interest = form.interest.value * 0.01
+    if(!interest) return
+
+    // Расчитываем срок вклада
+    let year = form.months.value / 12
+    if(!year) return
+
+    // Округлкеик результата к ближайшем целому и подсчет
+    // Math.round() = округление к ближайшему целому
+    let result = Math.round(initial * (1+interest*year))
+
+    // Вывод результат в виде столбцов
+    let height = result / form.money.value * 100 + `px`
+    document.getElementById(`height-after`).style.
+    height = height
+
+    // Видимые столбцы для идентификаторов
+    // Изначальная сумма
+    document.getElementById(`money-before`).innerHTML = form.money.value
+
+    // Результат
+    document.getElementById(`money-after`).innerHTML = result
+  }
+  // Вызываем созданную функцию
+  calculate()
   </script>
 </body>
 
