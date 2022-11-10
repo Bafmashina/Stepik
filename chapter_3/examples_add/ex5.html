@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Пример 5 - JavaScipt анимации</title>
+</head>
+<body>
+  
+  <img src="../img/1.jpg" width="100" id="img" style="position: relative;">
+
+  <script>
+    img.onclick = function() {
+
+      // Начало
+      let start = Date.now()
+      let timer = setInterval(function() {
+
+        // Расыитываем сколько время прошло сначала анимации
+        let timePassed = Date.now() - start
+        img.style.left = timePassed / 5 + `px`
+
+        // Проверяем время
+        if(timePassed > 2000) clearInterval(timer)
+      }, 20)
+    }
+  </script>
+</body>
+</html>

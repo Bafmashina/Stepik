@@ -567,5 +567,77 @@
 // =============================================================
 // Задача 52
 // Процедуры и функции
+// let x = 8, y = 1
+// function Quarter(x,y) {
+//     if(x<0 && y<0) {
+//         return 1
+//     }
+//     if(x>0 && y>0) {
+//         return 2
+//     }
+//     if(x>0 && y<0) {
+//         return 3
+//     }
+//     if(x<0 && y>0) {
+//         return 4
+//     }
+// }
+// console.log(Quarter(x,y))
+// =================================================================
+// Задача 53 
+// Условный оператор
+// let a = 8, b = 4
+// let low = 0
+// if(a>b) {
+//     low = b
+//     b = a
+//     a = low
+//     console.log(a + ` ` + b)
+// } else {
+//     low = a
+//     a = b 
+//     b = low
+//     console.log(a + ` ` + b)
+// }
+// ==============================================================
+// Задача 54
+// Цикл с параматером
+// let a = 4, b = 8
+// let count = 0
+// for(let i=a; i<=b; i++) {
+//     count += i
+//     console.log(i)
+// }
+// console.log(`count = ` + count)
+// ========================================================
+// Задача 55
+// Процедуры и функции
+// let k = [9, 5, 6, 3, 2, 1, 8, 9, 4, 5]
+// function isSquare(k) {
+//     let i = k
+//     while(i < k) {
+//         if(Math.pow(2, i) === k) {
+//             return {number: k, isSquare: true}
+//         }
+//         i++
+//     }
+//     return {number: k, isSquare: false}
+// }
+// for(let i=0; i<k.length; i++) {
+//     console.log(isSquare(k[i]))
+// }
+// =========================================================
+// Задача 56
+// Условный оператор
+let a = 8, b = 7
+if(a !== b) {
+    let sum = a + b
+    a = sum
+    b = sum
+} else {
+    a = 0
+    b = 0
+}
+console.log(a,b)
    
 
