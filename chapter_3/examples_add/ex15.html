@@ -10,7 +10,15 @@
 <body>
   
   <script>
-    
+    // Регулярное выражение для определения домена сайта
+    console.log("user.mail.ru isers-msil.ru".match(/([\w-]+\.)+\w+/g))
+
+    // Регулярное выражение длдя определения - email
+    console.log("email@yandex.ru @ email@mail.ru.com".match(/[-.\w]+@([\w-]+\.)+[\w-]+/g))
+
+let tag = "a".match(/a(z)?(c)?/)
+
+    // let tag = `<h1 class="title">Hello World</h1>`.match(/<(([a-z]+)\s*([^>]*))>/)
   </script>
 </body>
 </html>

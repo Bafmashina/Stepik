@@ -10,7 +10,15 @@
 <body>
   
   <script>
-   
+    // поиск формата времени
+   let regexp = /^\d\d:\d\d$/
+   while(true) {
+    let str = prompt("Введите время")
+    if(regexp.text(str)) {
+      alert("Вы ввели время" + str)
+      break;
+    }
+   }
   </script>
 </body>
 </html>

@@ -10,7 +10,10 @@
 <body>
   
   <script>
-    
+    // Работает только для /w - латинские символы
+    console.log("Hello World".match(/\bWorld\b/))
+    console.log("Hello MyWorld".match(/\bWorld\b/))
+    console.log("Hello 44 22 555 777".match(/\b\d\d\b/g))
   </script>
 </body>
 </html>
